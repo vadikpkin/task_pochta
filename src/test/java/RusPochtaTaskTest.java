@@ -67,7 +67,8 @@ public class RusPochtaTaskTest extends BaseTest {
     //Установить  цену в поле  до = 6000
     driver.findElement(By.id("glf-priceto-var")).sendKeys(expectedPriceTo);
     //Проверить что появилось окно с отоброжаемым количеством товаров
-    WebElement popUpWithProductAmount = waitUntilAndPerform(ExpectedConditions.visibilityOf(driver.findElement(By.className("n-filter-panel-counter"))));
+    WebElement popUpWithProductAmount = waitUntilAndPerform
+        (ExpectedConditions.visibilityOf(driver.findElement(By.className("n-filter-panel-counter"))));
     assertTrue(popUpWithProductAmount.isDisplayed(), "Amount pop up with amount of product is not displayed");
     //Нажать Показать подходящие
     driver.findElement(By.xpath("//span[text()='Показать подходящие']/..")).click();
@@ -76,7 +77,8 @@ public class RusPochtaTaskTest extends BaseTest {
     String actualPriceTo = driver.findElement(By.id("glpriceto")).getAttribute("value");
     assertEquals(actualPriceTo, expectedPriceTo, "Wrong price to");
     brands.forEach(e -> {
-      boolean isBrandSelected = driver.findElement(By.xpath(String.format("//*[@data-autotest-id='7893318']//input[contains(@name, '%s')]", e))).isSelected();
+      boolean isBrandSelected = driver.findElement
+          (By.xpath(String.format("//*[@data-autotest-id='7893318']//input[contains(@name, '%s')]", e))).isSelected();
       assertTrue(isBrandSelected, "Expected brand checkbox is not checked");
     });
   }
