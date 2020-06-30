@@ -9,6 +9,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
 public class RusPochtaTaskTest extends BaseTest {
+  //Тк одним из критериев было знание Selenium, то использован голый Selenium, без использования каких-либо оберток над ним.
+  //При вополнении задания решил не использовать PageObject, PageFactory паттерны тк посчитал это
+  //излишним для написания 2х тестов. Считаю что скриптовый подход тут оправдан. Так же все переменные, такие как URL, например
+  //осознанно не выносились в проперти файлы.
 
   @Test(description = "Doing google search and asserting first search result")
   public void googleSearchTest() {
