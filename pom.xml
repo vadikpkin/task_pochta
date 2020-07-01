@@ -16,7 +16,6 @@
     <testng.version>7.0.0</testng.version>
     <selenium.version>3.141.59</selenium.version>
     <wedriver.manager.version>4.0.0</wedriver.manager.version>
-    <assertj.version>3.15.0</assertj.version>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
   </properties>
