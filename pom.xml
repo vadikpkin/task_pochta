@@ -13,7 +13,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!--Dependencies-->
-    <testng.version>7.0.0</testng.version>
+    <testng.version>7.5.1</testng.version>
     <selenium.version>3.141.59</selenium.version>
     <wedriver.manager.version>4.0.0</wedriver.manager.version>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
